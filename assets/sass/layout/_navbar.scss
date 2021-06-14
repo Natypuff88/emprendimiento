@@ -1,0 +1,144 @@
+
+.navegation{
+    width: 100vw;
+    height: 70px;
+    position: relative;
+    background-color: $black;
+
+    &__logo{
+        position: absolute;
+        color: $white;
+        width: 100px;
+        height: 100px;  
+    }
+
+    &__menu{
+        padding: 0;
+        margin: 0;
+    }
+
+    &__img-logo{
+        width: auto;
+        height: 50px;
+        margin: 10px;
+      
+    }
+
+    &__title{
+        font-family: $poppins;
+        font-weight: $bold;     
+    }
+
+    &__container{
+        max-height: 0;
+        padding: 0;  
+    }
+
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        background-color: $black;
+        padding-top: 20px;
+    }
+
+    &__item{
+        @include texto_nav;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: $white;    
+    }
+
+    &__link{
+        margin-right: 4rem ;
+ 
+    }
+
+}
+
+.collapsible {
+    label{
+        display: none;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+
+#menu:checked ~ * .navegation__list{
+    visibility: visible;
+    height: 100%;
+    overflow: visible !important;
+}
+
+
+
+@media only screen and (max-width: 992px){
+
+    #menu ~ * .navegation__list{
+        visibility: hidden;
+        height: 100%;
+        overflow: visible !important;
+    }
+    
+    .navegation{
+        width: 100%;
+    }
+
+    .collapsible {
+        width: 100%;
+        text-align: right;
+        label{
+            display: block;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-right: 1.5em;
+            font-size: 1.8rem;
+        }
+        i{
+            color: $white;
+            &:hover{
+                color: $orange;
+            }
+        }
+    
+    }
+
+  
+
+    .navegation__logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .navegation__container{
+        height: auto;
+        max-height: 80%;
+        padding: .4em 0 .5em 0;
+        background-color: $black !important;
+       
+
+    }
+
+    .navegation__list{
+        margin: inherit;
+        padding: inherit;
+        background-color: $black !important;
+        z-index: 3;
+     
+    }
+
+    .navegation__item{
+        a{
+            padding: .6em 1em;
+            font-size: 1rem;
+            background-color: $black !important;
+        }
+    }
+
+
+}
+
+

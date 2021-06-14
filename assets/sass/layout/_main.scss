@@ -1,0 +1,138 @@
+.main{
+    width: 100%;
+    height: 100%;
+    grid-gap: 10px;
+
+
+
+    &__section{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $sable;
+  
+    }
+
+    &__card{
+        margin: auto;
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        border: 1px solid $charcoal;
+    }
+
+
+    &__img{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    &__title{
+        padding-top: 20px;
+        padding-bottom: 20px;
+       font-weight: $bold;
+       font-size: $xx-large;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+    &__text{
+        padding-bottom: 20px;
+       font-weight: $regular;
+       font-size: $medium;
+       line-height : 25px;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+    &__author{
+        padding-bottom: 20px;
+       font-weight: $bold;
+       font-size: $medium;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+
+    &__button{
+        background-color: $charcoal;
+        color: $white;
+        width: 100%;
+        height: 30px;        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    &__box-rounded{
+        margin: auto;
+        z-index: 3;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        border: 1px solid $sable;
+    }
+
+    &__img2{
+        z-index: 2;
+        width: 100px;
+        height: auto;
+       
+    }
+
+    &__title-2{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       font-weight: $bold;
+       font-size: $xx-large;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+    &__list{
+        list-style-type: circle;
+        margin-top: 20px;
+        margin-left: 20px;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+    &__box-web{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 20px;
+        i{
+            font-size: $large;
+            margin-left: 10px;
+        }
+    }
+
+    &__container__svg{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    &__img__svg{
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .main{
+
+    &__section{ 
+         padding: 0px;}
+    }
+}

@@ -1,0 +1,50 @@
+.color-red{
+    animation: rotation 3s infinite linear;
+    transform-origin: 80% 80%;
+
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+.code__svg{
+    animation: move 6s ease-in infinite;
+    animation-fill-mode: both
+    }
+
+
+@keyframes move {
+  
+    0%{
+        transform:translate(0px,0);
+    }
+
+    50%{
+        transform:translate(90px,0);
+    }
+
+    100%{ 
+        transform:translate(0px,0);
+    }
+
+}
+
+  
+
+
+
+
+
+
+
+
+

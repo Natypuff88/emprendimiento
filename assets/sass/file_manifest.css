@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+.navegation {
+  width: 100vw;
+  height: 70px;
+  position: relative;
+  background-color: #000000;
+}
+.navegation__logo {
+  position: absolute;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+}
+.navegation__menu {
+  padding: 0;
+  margin: 0;
+}
+.navegation__img-logo {
+  width: auto;
+  height: 50px;
+  margin: 10px;
+}
+.navegation__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.navegation__container {
+  max-height: 0;
+  padding: 0;
+}
+.navegation__list {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000000;
+  padding-top: 20px;
+}
+.navegation__item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-weight: 16px;
+  width: 150px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+}
+.navegation__link {
+  margin-right:  4rem ;
+}
+
+.collapsible label {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ * .navegation__list {
+  visibility: visible;
+  height: 100%;
+  overflow: visible !important;
+}
+
+@media only screen and (max-width: 992px) {
+  #menu ~ * .navegation__list {
+    visibility: hidden;
+    height: 100%;
+    overflow: visible !important;
+  }
+
+  .navegation {
+    width: 100%;
+  }
+
+  .collapsible {
+    width: 100%;
+    text-align: right;
+  }
+  .collapsible label {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1.5em;
+    font-size: 1.8rem;
+  }
+  .collapsible i {
+    color: #fff;
+  }
+  .collapsible i:hover {
+    color: #ffa500;
+  }
+
+  .navegation__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navegation__container {
+    height: auto;
+    max-height: 80%;
+    padding: 0.4em 0 0.5em 0;
+    background-color: #000000 !important;
+  }
+
+  .navegation__list {
+    margin: inherit;
+    padding: inherit;
+    background-color: #000000 !important;
+    z-index: 3;
+  }
+
+  .navegation__item a {
+    padding: 0.6em 1em;
+    font-size: 1rem;
+    background-color: #000000 !important;
+  }
+}/*# sourceMappingURL=file_manifest.css.map */
